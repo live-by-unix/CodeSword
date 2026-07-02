@@ -1,0 +1,70 @@
+{
+  "name": "Achievement",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Achievement title"
+    },
+    "description": {
+      "type": "string",
+      "description": "Achievement description"
+    },
+    "icon": {
+      "type": "string",
+      "description": "Achievement icon (emoji or icon name)"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "learning",
+        "gaming",
+        "streak",
+        "milestone",
+        "skill"
+      ],
+      "description": "Achievement category"
+    },
+    "language": {
+      "type": "string",
+      "enum": [
+        "python",
+        "java",
+        "c",
+        "general"
+      ],
+      "description": "Programming language specific or general"
+    },
+    "rarity": {
+      "type": "string",
+      "enum": [
+        "common",
+        "rare",
+        "epic",
+        "legendary"
+      ],
+      "description": "Achievement rarity level"
+    },
+    "points": {
+      "type": "number",
+      "description": "Points awarded for earning this achievement"
+    },
+    "requirements": {
+      "type": "object",
+      "description": "Requirements to unlock this achievement"
+    },
+    "order": {
+      "type": "number",
+      "description": "Display order"
+    }
+  },
+  "required": [
+    "title",
+    "description",
+    "icon",
+    "category",
+    "language",
+    "rarity",
+    "points"
+  ]
+}

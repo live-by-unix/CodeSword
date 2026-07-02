@@ -1,0 +1,28 @@
+{
+  "name": "UserAchievement",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string",
+      "description": "User's email"
+    },
+    "achievement_id": {
+      "type": "string",
+      "description": "Achievement ID"
+    },
+    "earned_date": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When achievement was earned"
+    },
+    "progress_data": {
+      "type": "object",
+      "description": "Additional progress data for tracking"
+    }
+  },
+  "required": [
+    "user_email",
+    "achievement_id",
+    "earned_date"
+  ]
+}

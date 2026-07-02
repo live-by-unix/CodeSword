@@ -1,0 +1,45 @@
+{
+  "name": "GameProgress",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string",
+      "description": "User's email"
+    },
+    "game_id": {
+      "type": "string",
+      "description": "Game ID"
+    },
+    "completed": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether game is completed"
+    },
+    "score": {
+      "type": "number",
+      "description": "Score achieved"
+    },
+    "best_score": {
+      "type": "number",
+      "description": "Best score achieved"
+    },
+    "completion_time": {
+      "type": "number",
+      "description": "Time taken to complete in seconds"
+    },
+    "attempts": {
+      "type": "number",
+      "default": 1,
+      "description": "Number of attempts"
+    },
+    "completion_date": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When game was completed"
+    }
+  },
+  "required": [
+    "user_email",
+    "game_id"
+  ]
+}

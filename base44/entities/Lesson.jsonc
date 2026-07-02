@@ -1,0 +1,57 @@
+{
+  "name": "Lesson",
+  "type": "object",
+  "properties": {
+    "language": {
+      "type": "string",
+      "enum": [
+        "python",
+        "java",
+        "c",
+        "cpp",
+        "rust",
+        "webdev"
+      ],
+      "description": "Programming language of the lesson"
+    },
+    "course_slug": {
+      "type": "string",
+      "description": "Reference to the course slug"
+    },
+    "title": {
+      "type": "string",
+      "description": "Lesson title"
+    },
+    "content": {
+      "type": "string",
+      "description": "Lesson content in markdown"
+    },
+    "code_example": {
+      "type": "string",
+      "description": "Code example for the lesson"
+    },
+    "expected_output": {
+      "type": "string",
+      "description": "Expected output when code is run"
+    },
+    "order": {
+      "type": "number",
+      "description": "Lesson order within course"
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "description": "Lesson difficulty"
+    }
+  },
+  "required": [
+    "language",
+    "course_slug",
+    "title",
+    "content"
+  ]
+}

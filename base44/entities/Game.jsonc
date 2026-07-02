@@ -1,0 +1,64 @@
+{
+  "name": "Game",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Game title"
+    },
+    "description": {
+      "type": "string",
+      "description": "Game description"
+    },
+    "language": {
+      "type": "string",
+      "enum": [
+        "python",
+        "java",
+        "c",
+        "general"
+      ],
+      "description": "Programming language focus"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "code_challenge",
+        "syntax_match",
+        "debug_hunt",
+        "quiz",
+        "drag_drop"
+      ],
+      "description": "Type of game"
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "description": "Game difficulty"
+    },
+    "points": {
+      "type": "number",
+      "description": "Points awarded for completion"
+    },
+    "game_data": {
+      "type": "object",
+      "description": "Game-specific data and configuration"
+    },
+    "order": {
+      "type": "number",
+      "description": "Display order"
+    }
+  },
+  "required": [
+    "title",
+    "description",
+    "language",
+    "type",
+    "difficulty",
+    "points"
+  ]
+}

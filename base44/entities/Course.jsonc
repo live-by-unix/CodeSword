@@ -1,0 +1,54 @@
+{
+  "name": "Course",
+  "type": "object",
+  "properties": {
+    "slug": {
+      "type": "string",
+      "description": "Unique slug for the course"
+    },
+    "language": {
+      "type": "string",
+      "enum": [
+        "python",
+        "java",
+        "c",
+        "cpp",
+        "rust",
+        "webdev"
+      ],
+      "description": "Programming language"
+    },
+    "title": {
+      "type": "string",
+      "description": "Course title"
+    },
+    "description": {
+      "type": "string",
+      "description": "Course description"
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "description": "Course difficulty level"
+    },
+    "duration_minutes": {
+      "type": "number",
+      "description": "Estimated completion time in minutes"
+    },
+    "order": {
+      "type": "number",
+      "description": "Course order for display"
+    }
+  },
+  "required": [
+    "slug",
+    "language",
+    "title",
+    "description",
+    "difficulty"
+  ]
+}

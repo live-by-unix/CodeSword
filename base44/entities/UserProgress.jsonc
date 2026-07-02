@@ -1,0 +1,37 @@
+{
+  "name": "UserProgress",
+  "type": "object",
+  "properties": {
+    "user_email": {
+      "type": "string",
+      "description": "User's email"
+    },
+    "course_slug": {
+      "type": "string",
+      "description": "Course slug"
+    },
+    "lesson_id": {
+      "type": "string",
+      "description": "Lesson ID"
+    },
+    "completed": {
+      "type": "boolean",
+      "default": false,
+      "description": "Whether lesson is completed"
+    },
+    "completion_date": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When lesson was completed"
+    },
+    "practice_code": {
+      "type": "string",
+      "description": "User's practice code"
+    }
+  },
+  "required": [
+    "user_email",
+    "course_slug",
+    "lesson_id"
+  ]
+}
